@@ -40,6 +40,12 @@ BettingGame.run = function() {
     updateScreen(bankroll);
   });
 
+  // $("#cashOut").click(function() {
+  //   $('li').text("Cha ching!");
+  //   bankroll = 0;
+  //   updateScreen(bankroll);
+  // });
+
   betSlider.noUiSlider.on("update", function(values)
   {
     betValue.innerHTML = values[0];
