@@ -91,14 +91,15 @@ BettingGame.run = function() {
       $("#reset").show();
     }
     displayIcons(bankroll);
-  }
+  };
 
   function displayIcons(bankroll)
   {
+    $("div i").remove();
     for(var i=0;i<bankroll;i++) {
-      $('#money').append('<i class="fa fa-money"></i>');
+      $("#money").append('<i class="fa fa-money"></i>');
     }
-  }
+  };
 
   updateScreen(bankroll);
 
