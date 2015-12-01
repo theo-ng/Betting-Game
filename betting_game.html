@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/skeleton.css"> 
+    <link rel="stylesheet" href="css/stylesheet.css"> 
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/betting_game.js"></script>
+    <script src="js/nouislider.min.js"></script>
+  </head>
+  <body>
+    <div class="three columns offset-by-four">
+      <div id="bankroll"></div>
+      <div id="money"></div>
+      <span class="twelve columns">
+        Amount:
+        <span id="slider-bet-value"></span>
+      </span>
+      <div id="slider-bet" class="twelve columns"></div>
+      <span>
+        Guess number: 
+        <span id="slider-guess-value"></span>
+      </span>
+      <div id="slider-guess" class="twelve columns"></div>
+      <ul id="rounds" class="twelve columns">
+        <li></li>
+      </ul>
+    </div>  
+    <span class="twelve columns offset-by-four">
+      <button class="button-primary" id="bet">Bet!</button>
+      <button class="button-primary" id="reset">Restart</button>
+    </span>
+    <script>
+      $(document).ready(function() {
+        BettingGame.run();
+      });
+    </script>
+  </body>
+</html>
