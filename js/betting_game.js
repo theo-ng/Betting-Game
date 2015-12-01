@@ -38,6 +38,13 @@ BettingGame.run = function() {
   $("#reset").click(function() {
     bankroll = 100;
     updateScreen(bankroll);
+    $("#reset").hide();
+  });
+
+  $("#cashOut").click(function() {
+    $('li').text("Cha ching!");
+    bankroll = 0;
+    updateScreen(bankroll);
   });
 
   betSlider.noUiSlider.on("update", function(values)
